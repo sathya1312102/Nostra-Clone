@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collections</title>
+    <!--Link CSS File-->
+    <link rel="stylesheet" href="style.css">
+    <!--Link Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!--Link Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!--Offer Bar-->
+
+    <div class="offer-bar">
+        <p>Sign Up and <b>GET 20% OFF</b> for your first Order
+            <i id="offer-close" style="margin-left: 10%; cursor: pointer;" class="fa-solid fa-xmark"></i>
+        </p>
+    </div>
+
+    <!--Navigation Bar-->
+    <nav class="navbar">
+        <h1>Nostra</h1>
+        <div class="navbar-links">
+            <p class="navbar-link"><a href="./index.html">Home</a></p>
+            <p class="navbar-link"><a href="./index.html#new-arrivals">New Arrival</a></p>
+            <p class="navbar-link"><a href="./index.html#most-wanted">Most Wanted</a></p>
+            <p class="navbar-link"><a href="./collections.html">Collections</a></p>
+            <p class="navbar-link"><a href="./contactus.html">Contact Us</a></p>
+        </div>
+
+
+        <div class="navbar-menu-toggle">
+            <i id="side-navbar-activate" class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <!--Side Navbar-->
+    <div class="side-navbar">
+        <p style="text-align: right;">
+            <i id="side-navbar-close" class="fa-solid fa-xmark"></i>
+        </p>
+        <div class="side-navbar-links">
+            <p class="side-navbar-link"><a href="./index.html">Home</a></p>
+            <p class="side-navbar-link"><a href="./index.html#new-arrivals">New Arrival</a></p>
+            <p class="side-navbar-link"><a href="./index.html#most-wanted">Most Wanted</a></p>
+            <p class="side-navbar-link"><a href="./collections.html">Collections</a></p>
+            <p class="side-navbar-link"><a href="./contactus.html">Contact Us</a></p>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="divide-section">
+            <div class="filter-section">
+
+                <h3 class="filter_section_occasion">Occasion</h3>
+                <div>
+                    <input type="checkbox" class="filter-checkbox" data-filter="occasion" value="Summer"> Summer <br>
+                    <input type="checkbox" class="filter-checkbox" data-filter="occasion" value="Party"> Party <br>
+                    <input type="checkbox" class="filter-checkbox" data-filter="occasion" value="Beach"> Beach <br>
+                </div>
+
+                <h3 class="filter_section_colors">Colors</h3>
+
+                <div>
+                    <input type="checkbox" class="filter-checkbox" data-filter="colors" value="Yellow"> Yellow <br>
+                    <input type="checkbox" class="filter-checkbox" data-filter="colors" value="White"> White <br>
+                    <input type="checkbox" class="filter-checkbox" data-filter="colors" value="Green"> Green <br>
+                    <input type="checkbox" class="filter-checkbox" data-filter="colors" value="Black"> Black <br>
+                </div>
+                <h3 class="filter_section_arrivals">Arrivals</h3>
+                <div>
+                    <input type="checkbox" class="filter-checkbox" data-filter="arrivals" value="New"> New <br>
+                    <input type="checkbox" class="filter-checkbox" data-filter="arrivals" value="Old"> Old <br>
+                </div>
+
+                <hr class="vertical-line"></hr>
+            </div>
+
+            <div class="product-section">
+                <form action="#" class="navbar-search">
+                    <input type="text" id="search-bar" placeholder="Search"> 
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </form>
+
+                <div class="products">
+                    <div class="product" data-occasion="Summer" data-colors="Yellow" data-arrivals="New" data-name="Floral Summer Shirt">
+                        <img src="./img/products/f9.jpg" alt="">
+                        <h1> Summer Dress</h1>
+                        <p>₹999</p>
+                    </div>
+                    <div class="product" data-occasion="Summer" data-colors="White" data-arrivals="New" data-name="Floral Summer Shirt">
+                        <img src="./img/products/f2.jpg" alt="">
+                        <h1>Summer Dress</h1>
+                        <p>₹1299</p>
+                    </div>
+                    <div class="product" data-occasion="Summer" data-colors="Green" data-arrivals="New" data-name="Floral Summer Shirt">
+                        <img src="./img/products/f3.jpeg" alt="">
+                        <h1>Summer Dress</h1>
+                        <p>₹1399</p>
+                    </div>
+                    <div class="product" data-occasion="Party" data-colors="Black" data-arrivals="Old" data-name="Designer Shirt">
+                        <img src="./img/products/f4.jpg" alt="">
+                        <h1>Designer Skirt</h1>
+                        <p>₹1499</p>
+                    </div>
+                    <div class="product" data-occasion="Party" data-colors="Black" data-arrivals="Old" data-name="Designer Shirt">
+                        <img src="./img/products/f5.jpg" alt="">
+                        <h1>Designer Skirt</h1>
+                        <p>₹1699</p>
+                    </div>
+                    <div class="product" data-occasion="Party" data-colors="White" data-arrivals="Old"data-name="Designer Shirt">
+                        <img src="./img/products/f6.jpeg" alt="">
+                        <h1>Designer Skirt</h1>
+                        <p>₹1899</p>
+                    </div>
+                    <div class="product" data-occasion="Beach" data-colors="Green" data-arrivals="New" data-name="Printed Shirt">
+                        <img src="./img/products/f7.jpg" alt="">
+                        <h1>Printed Dress</h1>
+                        <p>₹1999</p>
+                    </div>
+                    <div class="product" data-occasion="Beach" data-colors="White" data-arrivals="New" data-name="Printed Shirt">
+                        <img src="./img/products/f8.jpeg" alt="">
+                        <h1>Printed Dress</h1>
+                        <p>₹899</p>
+                    </div>
+                    <div class="product" data-occasion="Beach" data-colors="Yellow" data-arrivals="New" data-name="Printed Shirt">
+                        <img src="./img/products/f10.jpg" alt="">
+                        <h1>Printed Dress</h1>
+                        <p>₹1099</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="news">
+            <h2>Join our News Letter</h2>
+            <p style="text-align: center;">Signup for our email newspaper to get exclusive discounts, updates, and more</p>
+            <div style="margin-top: 10px;">
+                <input class="search">
+            </div>
+            <div>
+                <button> Subscribe <i class="fa-solid fa-arrow-right"></i> </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footer-box-1">
+                <h2 class="headingText">Nostra</h2>
+                <p>Keep updated with Nostra for exclusive deals and new arrivals. Enjoy hassle-free shopping with our satisfaction guarantee and fast, free delivery. Need help? Contact us anytime.</p>
+                <div class="footer-icon-container">
+                    <i class="icon fa-brands fa-instagram" style="color: #ffffff;"></i>
+                    <i class="icon fa-brands fa-twitter" style="color: #ffffff;"></i>
+                    <i class="icon fa-brands fa-facebook" style="color: #ffffff;"></i>
+                </div>
+            </div>
+        </div>
+
+        <p class="subtitle">@ 2024 Nostra.com</p>
+    </div>
+
+    <!--Link Javascript File-->
+    <script src="collections.js"></script>
+</body>
+</html>
